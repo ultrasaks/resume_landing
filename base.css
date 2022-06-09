@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap');
+/* #FFCC00 */
+::selection {
+    background-color: #2a2824;
+    color: #dcd6be;
+}
+
+::-webkit-scrollbar {
+    border-radius: 0.5rem;
+    background-color: #0f0d01;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #937b00;
+    border-radius: 1rem;
+}
+
+body {
+    font-family: 'ubuntu';
+    background-color: #060500;
+    color: #ECE3C1;
+}
+
+
+a {
+    transition-duration: .2s;
+    text-decoration: none;
+    color: #ffcc00 !important;
+}
+a:hover {
+    color: #ab9215 !important;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 300%;
+    font-weight: 400;
+}
+.resume {
+    font-family: 'Montserrat Alternates';
+    font-weight: 800;
+
+}
+.sub-item {
+    padding-left: .5rem;
+}
+.major {
+    padding: .2rem;
+    border-radius: .5rem;
+    background-color: #FFCC00;
+    color: #060500;
+}
+.lang {
+    position: absolute; top:1rem; left: 1rem
+}
+.who {
+    line-height: 150%;
+}
+.icon {
+    
+    color: #FFCC00;
+    padding-top: 1.4rem;
+    font-size: 200%;
+    padding-right: 0.3rem;
+}
+.icon_hoverable:hover {
+    transition-duration: .2s;
+    color: #ab9215
+}
+.text_icon {
+    display: flex;
+}
+
+
+.link {
+    font-family: 'Montserrat Alternates';
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .14rem;
+    bottom: -.2rem;
+    left: 0;
+    background-color: #ab9215;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.half-page_block {
+    padding-top: 40%;
+}
+@media (min-width: 700px){
+    .center_content {
+        padding-top: 15%;
+        width: 70%;
+        max-width: 1500px;
+    }
+}
+@media (max-width: 700px){
+    .center_content{
+        padding-top: 10%;
+        width: 100%;
+    }
+}
+
+.proj_title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 800;
+}
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffcc00;
+  }
+  
+.white_link {
+    cursor: pointer;
+    color: #dcd6be!important;
+    transition-duration: .2s;
+}
+.white_link:hover {
+    color: #a49f8b!important;
+}

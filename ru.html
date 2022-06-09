@@ -1,0 +1,102 @@
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>изюме</title>
+    <link href="base.css" rel="stylesheet">
+    <link href="tabler-icons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center">
+        <div class="center_content">
+            <div>
+                <label class="hello">Максим Мыш</label>
+                <br>
+                <p class="resume">резюме&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="transfer_to_elem('contacts')" class="link">контакты</a></p>
+            </div>
+            <div class="half-page_block">
+                <label class="hello">Кто я</label>
+                <h2 class="who">
+                    Работаю с Python с 2020 года. Имеется обширный опыт в создании ботов для VK и Telegram, а также адаптивных сайтов на Django и Flask. Работал с PHP, JS и C++
+                </h2>
+            </div>
+            <div style="height: 15rem;"></div>
+            
+            <div>
+                <label class="hello">Мои навыки</label>
+                <div class="text_icon">
+                    <i class="ti ti-code icon"></i>
+                    <h1 style="margin-bottom: 0;">ЯП<!--и ЯР если ты решил прикопаться--></h1>
+                </div>
+                <h3 class="sub-item"><b class="major">Python</b>,&nbsp;&nbsp;JS,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;PHP,&nbsp;&nbsp;C++</h4><br>
+                <div class="text_icon">
+                    <i class="ti ti-affiliate icon"></i>
+                    <h1 style="margin-bottom: 0;">Фреймворки</h1>
+                </div>
+                <h3 class="sub-item">Django</b>,&nbsp;&nbsp;Flask,&nbsp;&nbsp;Bootstrap,&nbsp;&nbsp;jQuery</h3><br>
+                <div class="text_icon">
+                    <i class="ti ti-manual-gearbox icon"></i>
+                    <h1 style="margin-bottom: 0;">Технологии</h1>
+                </div>
+                <h3 class="sub-item">async, websocket, sql, captcha, git, crossplatform, rest api</h3><br>
+                <div class="text_icon">
+                    <i class="ti ti-robot icon"></i>
+                    <h1 style="margin-bottom: 0;">Боты</h1>
+                </div>
+                <h3 class="sub-item"><b class="major">Telegram</b>,&nbsp;&nbsp;VK,&nbsp;&nbsp;Discord</h3><br>
+            </div>
+            <div style="height: 15rem;"></div>
+
+            <div>
+                <label class="hello">Проекты</label><br>
+                <div id="mish">
+                    <h1 class="proj_title">ультрамыш</h1>
+                    <h2>Бот для ВК и Telegram, самый крупный из моих проектов. Несколько тысяч строк кода, а также написан целый алгоритм, строящий связи между словами</h2>
+                    <h3><a href="https://vk.com/krodetsya_mish" class="link">ссылка</a></h3>
+                </div><br><br><br>
+                <div id="blog">
+                    <h1 class="proj_title">блог мыши</h1>
+                    <h2>Мой первый проект на Django. Имеет статистику, форматирование markdown, а также можно работать с блогом по апи.</h2>
+                    <h3><a href="https://blogmishi.herokuapp.com" class="link">ссылка</a></h3>
+                </div><br><br><br>
+                <div id="flask">
+                    <h1 class="proj_title">Магазин приложений</h1>
+                    <h2>Проект на flask, представляющий собой полноценный магазин приложений для Android и Windows. Имеет адаптивный интерфейс, собственную админ-панель и возможность загружать приложения.</h2>
+					<h3><div class="text_icon"><a href="http://ultrasaks.pythonanywhere.com" class="link">ссылка</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/ultrasaks/bShop_web" style="margin-top: 2px;" class="link"><i class="ti ti-brand-github"></i></a></div></h3>
+                </div><br><br><br>
+				<div id="messenger">
+                    <h1 class="proj_title">Hemes</h1>
+                    <h2>Простой мессенджер, написанный на django + JS(websocket), в котором можно общаться в личных сообщениях и в беседах.<h2>
+                    <h3><a href="https://hemes.herokuapp.com" class="link">ссылка</a></h3>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div style="height: 10rem;"></div>
+    
+    <footer class="center">
+        <div class="center_content" id="contacts">
+            <label class="hello">Контакты</label>
+            <h1>
+                <a href="https://github.com/ultrasaks">
+                    <i class="ti ti-brand-github icon icon_hoverable"></i>
+                </a>
+                <a href="https://t.me/nesaks">
+                    <i class="ti ti-brand-telegram icon icon_hoverable"></i>
+                </a>
+            </h1>   
+        </div>
+    </footer>
+    <br><br>
+    <div class="lang"><a class="white_link" href="/en.html">ENG</a>/<b class="major">RUS</b></div>
+    <!-- зачем сюда смотришь, думал будет на конструктере сайтов? -->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+function removeElementsByClass(className){    const elements = document.getElementsByClassName(className);    while(elements.length > 0){        elements[0].parentNode.removeChild(elements[0]);    }}removeElementsByClass("disclaimer");
+function transfer_to_elem(elem){
+    $("html, body").animate({ scrollTop: $('#'+elem).offset().top }, 1000);
+}
+</script>
+</html>
