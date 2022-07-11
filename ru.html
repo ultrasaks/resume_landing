@@ -2,9 +2,17 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
-    <title>изюме</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="tabler-icons.min.css" rel="stylesheet">
+    <title>Изюме</title>
+    <link href="css/base.css" rel="stylesheet">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#bc9d00">
+    <meta name="msapplication-TileColor" content="#bc9d00">
+    <meta name="theme-color" content="#bc9d00">
 </head>
 
 <body>
@@ -13,7 +21,7 @@
             <div>
                 <label class="hello">Максим Мыш</label>
                 <br>
-                <p class="resume">резюме&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="transfer_to_elem('contacts')" class="link">контакты</a></p>
+                <p class="resume">резюме<span class="resume_break resume_break_ru"></span>  <a onclick="transfer_to_elem('contacts')" class="link">контакты</a></p>
             </div>
             <div class="half-page_block">
                 <label class="hello">Кто я</label>
@@ -93,8 +101,8 @@
     <!-- зачем сюда смотришь, думал будет на конструктере сайтов? -->
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link href="css/tabler-icons.min.css" rel="stylesheet">
 <script>
-function removeElementsByClass(className){    const elements = document.getElementsByClassName(className);    while(elements.length > 0){        elements[0].parentNode.removeChild(elements[0]);    }}removeElementsByClass("disclaimer");
 function transfer_to_elem(elem){
     $("html, body").animate({ scrollTop: $('#'+elem).offset().top }, 1000);
 }

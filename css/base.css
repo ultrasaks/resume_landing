@@ -41,6 +41,7 @@ a:hover {
 .hello {
     font-size: 300%;
     font-weight: 400;
+    cursor: inherit;
 }
 .resume {
     font-family: 'Montserrat Alternates';
@@ -138,4 +139,11 @@ a:hover {
 }
 .white_link:hover {
     color: #a49f8b!important;
+}
+.resume_break {
+    width: 7.7rem;
+    display: inline-block;
+}
+.resume_break_ru {
+    width: 8rem;
 }

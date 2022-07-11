@@ -3,8 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
     <title>Resume</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="tabler-icons.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#bc9d00">
+    <meta name="msapplication-TileColor" content="#bc9d00">
+    <meta name="theme-color" content="#bc9d00">
 </head>
 
 <body>
@@ -13,12 +21,12 @@
             <div>
                 <label class="hello">Maxim Mysh</label>
                 <br>
-                <p class="resume">resume&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="transfer_to_elem('contacts')" class="link">contacts</a></p>
+                <p class="resume">resume <span class="resume_break"></span><a onclick="transfer_to_elem('contacts')" class="link">contacts</a></p>
             </div>
             <div class="half-page_block">
                 <label class="hello">Who am I</label>
                 <h2 class="who">
-                    Working on Python since 2020. Had a lot experience in creating VK and Telegram bots and adaptive websites on Django and Flask. Had some experience with PHP, JS and C++.
+                    Working on Python since 2020. Had a of lot experience in creating VK/Telegram bots and adaptive websites on Django and Flask. Had some experience with PHP, JS and C++.
                 </h2>
             </div>
             <div style="height: 15rem;"></div>
@@ -90,11 +98,11 @@
     </footer>
     <br><br>
     <div class="lang"><b class="major">ENG</b>/<a class="white_link" href="/ru.html">RUS</a></div>
-    <!-- зачем сюда смотришь, думал будет на конструктере сайтов? -->
+    <!-- what are you looking for? -->
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link href="css/tabler-icons.min.css" rel="stylesheet">
 <script>
-function removeElementsByClass(className){    const elements = document.getElementsByClassName(className);    while(elements.length > 0){        elements[0].parentNode.removeChild(elements[0]);    }}removeElementsByClass("disclaimer");
 function transfer_to_elem(elem){
     $("html, body").animate({ scrollTop: $('#'+elem).offset().top }, 1000);
 }
