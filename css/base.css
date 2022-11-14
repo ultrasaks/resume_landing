@@ -22,6 +22,9 @@ body {
     color: #ECE3C1;
 }
 
+footer {
+    margin-bottom: 2rem;
+}
 
 a {
     transition-duration: .2s;
@@ -49,7 +52,9 @@ a:hover {
 
 }
 .sub-item {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1.17em;
 }
 .major {
     padding: .2rem;
@@ -76,6 +81,7 @@ a:hover {
 }
 .text_icon {
     display: flex;
+    margin: 0;
 }
 
 
@@ -118,6 +124,9 @@ a:hover {
         padding-top: 10%;
         width: 100%;
     }
+    .footer-space {
+        height: 10rem;
+    }
 }
 
 .proj_title {
@@ -146,4 +155,17 @@ a:hover {
 }
 .resume_break_ru {
     width: 8rem;
+}
+.links {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.link-github {
+    margin-top: 2px;
+}
+.space-block {
+    height: 15rem;
+}
+.skills-margin {
+    margin-bottom: 0;
 }

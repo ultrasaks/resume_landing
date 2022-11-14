@@ -2,20 +2,25 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
+    <meta name="msapplication-TileColor" content="#bc9d00">
+    <meta name="theme-color" content="#bc9d00">
+    <meta name="title" property="og:title" content="сайт мыши">
+    <meta name="description" property="og:description" content="лучший сайт">
+    <meta property="og:image" content="https://jointprojects.tk/mouse.jpg">
+
     <title>Изюме</title>
     <link href="css/base.css" rel="stylesheet">
-
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#bc9d00">
-    <meta name="msapplication-TileColor" content="#bc9d00">
-    <meta name="theme-color" content="#bc9d00">
+    
 </head>
 
 <body>
+    <header class="lang"><a class="white_link" href="/en.html">ENG</a>/<b class="major">RUS</b></header>
     <div class="center">
         <div class="center_content">
             <div>
@@ -26,62 +31,82 @@
             <div class="half-page_block">
                 <label class="hello">Кто я</label>
                 <h2 class="who">
-                    Работаю с Python с 2020 года. Имеется обширный опыт в создании ботов для VK и Telegram, а также адаптивных сайтов на Django и Flask. Работал с PHP, JS и C++
+                    Работаю на Python с 2020 года. 
+                    Имеется обширный опыт в создании ботов для VK и Telegram, а также адаптивных сайтов на Django и Flask. 
+                    Более 20 заказов на бирже <a href="https://kwork.ru/" class="link">kwork</a>.
                 </h2>
             </div>
-            <div style="height: 15rem;"></div>
+            <div class="space-block"></div>
             
             <div>
                 <label class="hello">Мои навыки</label>
                 <div class="text_icon">
                     <i class="ti ti-code icon"></i>
-                    <h1 style="margin-bottom: 0;">ЯП<!--и ЯР если ты решил прикопаться--></h1>
+                    <h1 class="skills-margin">ЯП</h1>
                 </div>
-                <h3 class="sub-item"><b class="major">Python</b>,&nbsp;&nbsp;JS,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;PHP,&nbsp;&nbsp;C++</h4><br>
+                <p class="sub-item"><b class="major">Python</b>,&nbsp;&nbsp;JS,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;PHP</p><br>
                 <div class="text_icon">
                     <i class="ti ti-affiliate icon"></i>
-                    <h1 style="margin-bottom: 0;">Фреймворки</h1>
+                    <h1 class="skills-margin">Фреймворки</h1>
                 </div>
-                <h3 class="sub-item">Django</b>,&nbsp;&nbsp;Flask,&nbsp;&nbsp;Bootstrap,&nbsp;&nbsp;jQuery</h3><br>
-                <div class="text_icon">
+                <p class="sub-item">Django</b>,&nbsp;&nbsp;Flask,&nbsp;&nbsp;jQuery</p><br>
+                <!-- <div class="text_icon">
                     <i class="ti ti-manual-gearbox icon"></i>
-                    <h1 style="margin-bottom: 0;">Технологии</h1>
+                    <h1 class="skills-margin">Технологии</h1>
                 </div>
-                <h3 class="sub-item">async, websocket, sql, captcha, git, crossplatform, rest api</h3><br>
+                <p class="sub-item">async, websocket, sql, captcha, git, crossplatform, rest api</p><br> -->
                 <div class="text_icon">
                     <i class="ti ti-robot icon"></i>
-                    <h1 style="margin-bottom: 0;">Боты</h1>
+                    <h1 class="skills-margin">Боты</h1>
                 </div>
-                <h3 class="sub-item"><b class="major">Telegram</b>,&nbsp;&nbsp;VK,&nbsp;&nbsp;Discord</h3><br>
+                <p class="sub-item"><b class="major">Telegram</b>,&nbsp;&nbsp;VK</p><br>
             </div>
-            <div style="height: 15rem;"></div>
+            <div class="space-block"></div>
 
             <div>
                 <label class="hello">Проекты</label><br>
                 <div id="mish">
                     <h1 class="proj_title">ультрамыш</h1>
                     <h2>Бот для ВК и Telegram, самый крупный из моих проектов. Несколько тысяч строк кода, а также написан целый алгоритм, строящий связи между словами</h2>
-                    <h3><a href="https://vk.com/krodetsya_mish" class="link">ссылка</a></h3>
+                    <p class="links"><a href="https://vk.com/krodetsya_mish" class="link">ссылка</a></p>
                 </div><br><br><br>
-                <div id="blog">
-                    <h1 class="proj_title">блог мыши</h1>
-                    <h2>Мой первый проект на Django. Имеет статистику, форматирование markdown, а также можно работать с блогом по апи.</h2>
-                    <h3><a href="https://blogmishi.herokuapp.com" class="link">ссылка</a></h3>
-                </div><br><br><br>
+
                 <div id="flask">
                     <h1 class="proj_title">Магазин приложений</h1>
                     <h2>Проект на flask, представляющий собой полноценный магазин приложений для Android и Windows. Имеет адаптивный интерфейс, собственную админ-панель и возможность загружать приложения.</h2>
-					<h3><div class="text_icon"><a href="http://ultrasaks.pythonanywhere.com" class="link">ссылка</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/ultrasaks/bShop_web" style="margin-top: 2px;" class="link"><i class="ti ti-brand-github"></i></a></div></h3>
+					<p class="links">
+                        <span class="text_icon">
+                            <a href="http://ultrasaks.pythonanywhere.com" class="link">ссылка</a>&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/ultrasaks/bShop_web" class="link link-github">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </span>
+                    </p>
                 </div><br><br><br>
+
 				<div id="messenger">
                     <h1 class="proj_title">Hemes</h1>
-                    <h2>Простой мессенджер, написанный на django + JS(websocket), в котором можно общаться в личных сообщениях и в беседах.<h2>
-                    <h3><a href="https://hemes.herokuapp.com" class="link">ссылка</a></h3>
+                    <h2>Простой мессенджер, написанный на django + JS(websocket), в котором можно общаться в личных сообщениях и в беседах.</h2>
+                    <p class="links"><a href="https://hemes.herokuapp.com" class="link">ссылка</a></p>
+                </div><br><br><br>
+
+                <div id="mylink">
+                    <h1 class="proj_title">MYLink</h1>
+                    <h2>Сервис, подобный linktree, написанный на Django.</h2>
+					<p class="links">
+                        <span class="text_icon">
+                            <a href="http://mylink.pythonanywhere.com" class="link">ссылка</a>&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/ultrasaks/linktree" class="link link-github">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </span>
+                    </p>
                 </div>
+
             </div>
         </div>
     </div> 
-    <div style="height: 10rem;"></div>
+    <div class="footer-space"></div>
     
     <footer class="center">
         <div class="center_content" id="contacts">
@@ -96,9 +121,8 @@
             </h1>   
         </div>
     </footer>
-    <br><br>
-    <div class="lang"><a class="white_link" href="/en.html">ENG</a>/<b class="major">RUS</b></div>
-    <!-- зачем сюда смотришь, думал будет на конструктере сайтов? -->
+    
+    <!-- зачем сюда смотришь? -->
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link href="css/tabler-icons.min.css" rel="stylesheet">

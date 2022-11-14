@@ -2,20 +2,26 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
-    <title>Resume</title>
-    <link href="css/base.css" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#bc9d00">
+    <meta name="theme-color" content="#bc9d00">
+    <meta name="title" property="og:title" content="сайт мыши">
+    <meta name="description" property="og:description" content="лучший сайт">
+    <meta property="og:image" content="https://jointprojects.tk/mouse.jpg">
 
+    <title>Resume</title>
+
+    <link href="css/base.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#bc9d00">
-    <meta name="msapplication-TileColor" content="#bc9d00">
-    <meta name="theme-color" content="#bc9d00">
+    
 </head>
 
 <body>
+    <header class="lang"><b class="major">ENG</b>/<a class="white_link" href="/ru.html">RUS</a></header>
     <div class="center">
         <div class="center_content">
             <div>
@@ -26,62 +32,81 @@
             <div class="half-page_block">
                 <label class="hello">Who am I</label>
                 <h2 class="who">
-                    Working on Python since 2020. Had a of lot experience in creating VK/Telegram bots and adaptive websites on Django and Flask. Had some experience with PHP, JS and C++.
+                    Working on Python since 2020. 
+                    Had a of lot experience in creating VK/Telegram bots and adaptive websites on Django and Flask. 
+                    More than 20 orders on <a href="https://kwork.ru/" class="link">kwork</a>.
                 </h2>
             </div>
-            <div style="height: 15rem;"></div>
+            <div class="space-block"></div>
             
             <div>
                 <label class="hello">My skills</label>
                 <div class="text_icon">
                     <i class="ti ti-code icon"></i>
-                    <h1 style="margin-bottom: 0;">Programming languages</h1>
+                    <h1 class="skills-margin">Programming languages</h1>
                 </div>
-                <h3 class="sub-item"><b class="major">Python</b>,&nbsp;&nbsp;JS,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;PHP,&nbsp;&nbsp;C++</h4><br>
+                <p class="sub-item"><b class="major">Python</b>,&nbsp;&nbsp;JS,&nbsp;&nbsp;HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;PHP</p><br>
                 <div class="text_icon">
                     <i class="ti ti-affiliate icon"></i>
-                    <h1 style="margin-bottom: 0;">Frameworks</h1>
+                    <h1 class="skills-margin">Frameworks</h1>
                 </div>
-                <h3 class="sub-item">Django</b>,&nbsp;&nbsp;Flask,&nbsp;&nbsp;Bootstrap,&nbsp;&nbsp;jQuery</h3><br>
-                <div class="text_icon">
+                <p class="sub-item">Django</b>,&nbsp;&nbsp;Flask,&nbsp;&nbsp;jQuery</p><br>
+                <!-- <div class="text_icon">
                     <i class="ti ti-manual-gearbox icon"></i>
-                    <h1 style="margin-bottom: 0;">Techonologies stack</h1>
+                    <h1 class="skills-margin">Techonologies stack</h1>
                 </div>
-                <h3 class="sub-item">async, websocket, sql, captcha, git, crossplatform, rest api</h3><br>
+                <p class="sub-item">async, websocket, sql, captcha, git, crossplatform, rest api</p><br> -->
                 <div class="text_icon">
                     <i class="ti ti-robot icon"></i>
-                    <h1 style="margin-bottom: 0;">Bots</h1>
+                    <h1 class="skills-margin">Bots</h1>
                 </div>
-                <h3 class="sub-item"><b class="major">Telegram</b>,&nbsp;&nbsp;VK,&nbsp;&nbsp;Discord</h3><br>
+                <p class="sub-item"><b class="major">Telegram</b>,&nbsp;&nbsp;VK</p><br>
             </div>
-            <div style="height: 15rem;"></div>
+            <div class="space-block"></div>
 
             <div>
                 <label class="hello">Projects</label><br>
                 <div id="mish">
                     <h1 class="proj_title">ultramysh</h1>
                     <h2>VK and Telegram bot. A few thousands lines of code.</h2>
-                    <h3><a href="https://vk.com/krodetsya_mish" class="link">link</a></h3>
+                    <p class="links"><a href="https://vk.com/krodetsya_mish" class="link">link</a></p>
                 </div><br><br><br>
-                <div id="blog">
-                    <h1 class="proj_title">mysh blog</h1>
-                    <h2>My first django project. Have statistics, markdown formatting and api.</h2>
-                    <h3><a href="https://blogmishi.herokuapp.com" class="link">link</a></h3>
-                </div><br><br><br>
+
                 <div id="flask">
                     <h1 class="proj_title">bShop</h1>
                     <h2>Flask-based android and windows app store. Have an adaptive interface, custom admin panel and all users can upload their apps.</h2>
-					<h3><div class="text_icon"><a href="http://ultrasaks.pythonanywhere.com" class="link">link</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/ultrasaks/bShop_web" style="margin-top: 2px;" class="link"><i class="ti ti-brand-github"></i></a></div></h3>
+					<p class="links">
+                        <span class="text_icon">
+                            <a href="http://ultrasaks.pythonanywhere.com" class="link">link</a>&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/ultrasaks/bShop_web" style="margin-top: 2px;" class="link">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </span>
+                    </p>
                 </div><br><br><br>
+
 				<div id="messenger">
                     <h1 class="proj_title">Hemes</h1>
                     <h2>Simple messenger written on a django + JS(websocket) where you can message people in DMs and chats<h2>
-                    <h3><a href="https://hemes.herokuapp.com" class="link">link</a></h3>
+                    <p class="links"><a href="https://hemes.herokuapp.com" class="link">link</a></p>
+                </div><br><br><br>
+
+                <div id="mylink">
+                    <h1 class="proj_title">MYLink</h1>
+                    <h2>Linktree-like service written on Django.</h2>
+					<p class="links">
+                        <span class="text_icon">
+                            <a href="http://mylink.pythonanywhere.com" class="link">link</a>&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/ultrasaks/linktree" style="margin-top: 2px;" class="link">
+                                <i class="ti ti-brand-github"></i>
+                            </a>
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div style="height: 10rem;"></div>
+    <div class="footer-space"></div>
     
     <footer class="center">
         <div class="center_content" id="contacts">
@@ -97,7 +122,6 @@
         </div>
     </footer>
     <br><br>
-    <div class="lang"><b class="major">ENG</b>/<a class="white_link" href="/ru.html">RUS</a></div>
     <!-- what are you looking for? -->
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
